@@ -1,0 +1,70 @@
+{
+    "locations": [
+        {
+            "title": "Hydrant 1",
+            "description": "Security Checkpoint",
+            "latitude":  5.650734,
+            "longitude":-0.180979
+        },
+        {
+            "title": "Hydrant 2",
+            "description": "Sarbah Hall",
+            "latitude":  5.645919,
+            "longitude":-0.185646
+        },
+        {
+            "title": "Hydrant 3",
+            "description": "Physics & Geography Dept.",
+            "latitude":  5.650953,
+            "longitude":-0.184450
+        },
+        {
+            "title": "Hydrant 4",
+            "description": "Legon Hall Car Park",
+            "latitude":  5.650470,
+            "longitude":-0.188903
+        },
+        {
+            "title": "Hydrant 5",
+            "description": "Haatso Filling Station",
+            "latitude":  5.667854,
+            "longitude":-0.204030
+        },
+        {
+            "title": "Hydrant 6",
+            "description": "East Legon Shell",
+            "latitude":  5.642444,
+            "longitude":-0.151974
+        },
+        {
+            "title": "Hydrant 7",
+            "description": "Papao Haatso",
+            "latitude":  5.663519,
+            "longitude":-0.204256
+        },
+        {
+            "title": "Hydrant 8",
+            "description": "Haatso Gas Filling Station",
+            "latitude":  5.666963,
+            "longitude":-0.177847
+        },
+        {
+            "title": "Hydrant 9",
+            "description": "Achimota School",
+            "latitude":  5.625489,
+            "longitude":-0.214276
+        },
+        {
+            "title": "Hydrant 10",
+            "description": "Achimota Mall",
+            "latitude":  5.637247,
+            "longitude":-0.240881
+        },
+        {
+            "title": "Hydrant 11",
+            "description": "Tesano Police Academy",
+            "latitude":  5.589484,
+            "longitude":-0.221293
+        }
+    ]
+}

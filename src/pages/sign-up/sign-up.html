@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Create an account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/img/background.png) no-repeat center;background-size:cover;">
+  <div padding class="log-in-txt" (click)="openLoginPage()">
+    Log In
+  </div>
+  <div class="spacer" style="width: 300px; height: 50px;"></div>
+  <ion-row>
+    <ion-col>
+      <img [@flyInBottomSlow]="logoState" src="assets/img/add-user-icon.svg" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+    </ion-col>
+  </ion-row>
+
+  <!-- <div padding class="log-in-txt" (click)="login()">
+    Log In
+  </div>-->
+
+  <div class="spacer" style="width: 300px; height: 29px;"></div>
+
+
+  <form (ngSubmit)="signUserUp()" #signUpForm="ngForm">
+    <ion-row>
+      <ion-col>
+        <ion-list inset [@bounceInBottom]="formState">
+          <ion-item>
+            <ion-input type="email" name="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" name="password" [(ngModel)]="password" placeholder=" Password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button [@fadeIn]="loginState" ion-button block round color="secondary" (click)="signUserUp()" [disabled]="!signUpForm.form.valid"
+          class="sign-up-btn">
+      Create Account
+      </button>
+      </ion-col>
+    </ion-row>
+
+    <div padding class="error" *ngIf="error">
+      <p>{{error}}</p>
+    </div>
+  </form>
+</ion-content>

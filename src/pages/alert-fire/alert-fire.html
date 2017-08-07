@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      Fire SMS Alert
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-label stacked>Phone Number</ion-label>
+      <ion-input [(ngModel)]="text.number" type="text"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label stacked>Message</ion-label>
+      <ion-textarea [(ngModel)]="text.message"></ion-textarea>
+    </ion-item>
+ 
+    <ion-item>
+      <button ion-button icon-left clear item-right (click)="sendTextMessage()">
+      <ion-icon name="checkmark"></ion-icon>
+      Send
+    </button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <h2>Legon Fire Service</h2>
+    <p> 0500009134 </p>
+  </ion-card>
+
+  <ion-card>
+    <h2>Madina Fire Service</h2>
+    <p> 0268085100 </p>
+  </ion-card>
+
+  <ion-card>
+    <h2>Achimota Fire Service</h2>
+    <p> 0209136196 </p>
+  </ion-card>
+</ion-content>

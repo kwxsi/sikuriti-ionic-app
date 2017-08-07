@@ -1,0 +1,32 @@
+<ion-header color="danger">
+  <ion-navbar>
+    <ion-title>
+      Set Pi Location
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)='toggleSearch()'>
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)='choosePosition()'>
+        <ion-icon name="ios-locate-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div class="map">
+    <ion-searchbar #searchbar placeholder="Search for Pi address" [hidden]="!search"></ion-searchbar>
+    
+    <ion-card>
+      <ion-card-content>
+        <div #directionsPanel></div>
+      </ion-card-content>
+    </ion-card>
+    
+    <div id="map" #map></div>
+  </div>
+
+</ion-content>

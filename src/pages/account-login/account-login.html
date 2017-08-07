@@ -1,0 +1,58 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Account Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/img/background.png) no-repeat center;background-size:cover;">
+  <ion-row>
+    <ion-col>
+      <img [@flyInBottomSlow]="logoState" src="assets/img/user-icon1.svg" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;"
+      />
+    </ion-col>
+  </ion-row>
+
+  <form id="accountLogin-form1" class="list">
+    <ion-row>
+      <ion-col>
+        <ion-list inset [@bounceInBottom]="formState">
+
+          <ion-item>
+            <ion-input type="email" name="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" name="password" [(ngModel)]="password" placeholder=" Password"></ion-input>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button class="login-button" [@fadeIn]="loginState" block round color="secondary" icon-left (click)="login()">
+    <ion-icon name="mail"></ion-icon> 
+    Log in
+  </button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button class="signup-button" [@fadeIn]="signupState" (click)="signup()">
+    Sign Up
+    </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button class="resetPass-button" [@fadeIn]="resetPassState" color="light" (click)="showForgotPassword()">
+    Forgot password?
+    </button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

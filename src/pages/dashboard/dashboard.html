@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/img/background.png) no-repeat center;background-size:cover;" class="has-header">
+  <div class="spacer" style="width: 300px; height: 47px;"></div>
+
+  <button ion-button block round color="danger" icon-left (click)="open()">
+    <ion-icon name="videocam"></ion-icon> 
+    View Pi Image
+  </button>
+
+  <button ion-button block round color="danger" icon-left (click)="pushToPolice()">
+    <ion-icon name="send"></ion-icon> 
+    Alert Police
+  </button>
+
+  <button ion-button block round color="danger" icon-left (click)="pushToFire()">
+    <ion-icon name="send"></ion-icon> 
+    Alert Fire Service
+  </button>
+
+  <button ion-button block round color="danger" icon-left (click)="openTips()">
+    <ion-icon name="flame"></ion-icon> 
+    Fire Extinguisher Tips
+  </button>
+
+  <button ion-button block round color="danger" icon-left (click)="reminder()">
+    <ion-icon name="notifications"></ion-icon> 
+    Set Reminder
+  </button>
+
+  <button ion-button block round color="danger" icon-left (click)="openMaps()">
+    <ion-icon name="navigate"></ion-icon> 
+    Set Pi Location
+  </button>
+
+  <button ion-button block round color="danger" icon-left (click)="openSettings()">
+    <ion-icon name="settings"></ion-icon> 
+    Settings
+  </button>
+
+</ion-content>

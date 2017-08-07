@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title icon-right>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/img/background.png) no-repeat center;background-size:cover;">
+  <div class="spacer" style="width: 300px; height: 65px;"></div>
+
+  <button ion-button block round color="danger" (click)="openTips()">
+    Fire Extinguisher Tips
+  </button>
+
+
+  <button ion-button block round color="danger" (click)="openHelp()">
+    Help
+  </button>
+
+  <button ion-button block round color="danger"  (click)="openAbout()">
+    About
+  </button>
+
+  <div class="spacer" style="width: 287px; height: 39px;"></div>
+
+  <button ion-button block round color="light"  (click)="signoutUser()">
+    Sign Out
+  </button>
+</ion-content>
